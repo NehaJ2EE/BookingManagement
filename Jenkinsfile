@@ -7,17 +7,17 @@ pipeline {
 	stages {
 		stage ('Compile Stage') {
 			steps {
-				bat 'mvn clean compile'
+				sh 'mvn clean compile'
 			}
 		}
 		stage ('Sonarqube deployement Stage') {
 			steps {
-				bat 'mvn sonar:sonar'
+				sh 'mvn sonar:sonar'
 			}
 		}
 		stage ('Test') {
 			steps {
-				bat 'mvn test'
+				sh 'mvn test'
 			}
 		}
 	}
