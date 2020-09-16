@@ -14,7 +14,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>UserEvent</name>
 	<description>Event management system </description>
-
+        <distributionManagement>
+		<snapshotRepository>
+		
+			<id> deployment</id>
+			<name>Internal Snapshot release</name>
+			<url>http://localhost:8081/repository/dealsdate/</url>
+			
+		</snapshotRepository>
+	</distributionManagement>
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
